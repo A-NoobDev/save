@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+    <script>
+        let counter = 0;
+        // function count(){
+        //     counter = counter + 1;
+            
+        //     let heading = document.querySelector('h1');
+        //     heading.innerHTML = counter;
+
+        // }
+
+        // function main(){
+        //     document.querySelector('button').addEventListener('click',count);
+        // }
+        
+        // document.addEventListener('DOMContentLoaded',main);
+
+        document.addEventListener('DOMContentLoaded',function(){
+            let heading = document.querySelector('h1');
+            let counter = heading.innerHTML;
+            console.log("Counter", counter);
+            document.querySelector('button').addEventListener('click',function(){
+                let x = document.querySelector('button').dataset.count;
+                console.log("Data Count", x);
+                counter = Number(counter) + Number(x);
+                heading.innerHTML = counter;
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <h1>0</h1>
+    <button data-count="1">Count Up</button>
+    <button data-count="-1">Count Down</button>
+</body>
+</html>
