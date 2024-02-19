@@ -9,7 +9,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i");
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -621,4 +621,62 @@ body {
     transform: rotate(360deg);
   }
 }
+/*timeline.html*/
+  /*--------------------------------------------------------------
+  # Timeline
+  --------------------------------------------------------------*/
+  #timeline {
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .timeline-inner {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .timeline-panel {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .timeline-panel:after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #ddd;
+  }
+  
+  .timeline-panel .timeline-heading {
+    margin-bottom: 10px;
+  }
+  
+  .timeline-panel .timeline-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  
+  .timeline-panel .timeline-body {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
 
+  .timeline-shift {
+    margin-left: 20%;
+  }
